@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anyagátvétel kalkulátor</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2316a34a'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%99%BB%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="login-screen">
+    <div id="login-box">
+      <div class="brand-icon" aria-hidden="true">♻️</div>
+      <h1>Anyagátvétel kalkulátor</h1>
+      <p class="login-subtitle">Belső eszköz a felvásárlási elszámoláshoz</p>
+      <form id="login-form" autocomplete="off">
+        <input type="password" id="password-input" placeholder="Jelszó" autofocus>
+        <button type="submit">Belépés</button>
+      </form>
+      <div id="login-error"></div>
+    </div>
+  </div>
+
+  <div id="app-screen">
+    <header>
+      <div class="brand">
+        <span class="header-icon" aria-hidden="true">♻️</span>
+        <h1>Anyagátvétel kalkulátor</h1>
+      </div>
+      <div class="header-actions">
+        <a class="link-btn" href="settings.html">Beállítások</a>
+        <button id="logout-btn" type="button">Kilépés</button>
+      </div>
+    </header>
+
+    <div id="items-list"></div>
+    <div id="empty-hint" class="empty-hint">Nincs még tétel. Adj hozzá egyet lent.</div>
+    <button id="add-row-btn" type="button">+ Új tétel</button>
+
+    <div id="total-card">
+      <span class="label">Fizetendő összesen</span>
+      <span class="value" id="total-value">0,00 RON</span>
+    </div>
+
+    <button id="reset-btn" type="button">Új kliens (mindent töröl)</button>
+  </div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

